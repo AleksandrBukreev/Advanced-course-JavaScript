@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: dimgray;
+    margin-bottom: 100px;
+}
+.header-left {
+margin-left: 25px;
+}
+.header-right {
+    margin-right: 25px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item{
+    text-align: center;
+}
+
+.buy-btn {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+}
