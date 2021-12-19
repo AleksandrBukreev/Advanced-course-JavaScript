@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="text">
+        Д'ок'тор озабоченно повернулся ко мне: 'Д'жим, мальчик мой, что случилось?'
+
+        Я показал достопочтенным джентльменам карту и пояснил:
+        'Доктор, сквайр, на 'А'дмирал Бенбоу' напали пираты, они
+        искали вот эту карту'.
+
+        Т'релони вскочил, едва не опрокинув кресло, и горячо воскликнул: 'Мерзавцы ещё поплатятся за свои злодеяния!'
+    </p>
+    <button id="replace">REPLACE</button>
+    <script>
+        let block = document.getElementById('text');
+        document.getElementById('replace').addEventListener('click', () => {
+            //block.textContent = block.textContent.replace(/'/g, '"');//g-маркер везде
+            block.textContent = block.textContent.replace(/\s'|'\s/g, '"');//s-маркер пробел (b-граница слова B-не граница слова )
+        });
+    </script>
+</body>
+
+</html>
